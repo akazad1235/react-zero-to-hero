@@ -1,13 +1,32 @@
 import React from 'react';
-import {add,  mul } from '../../utilities/Calculate';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { addToDb } from '../utilities/fakedata';
 
 const Products = () => {
-    let summation = add(4, 5);
-    let proMul = mul(35, 5);
+    const [products, setProducts] =  useState([]);
+    useEffect(()=>{
+        fetch('data.json')
+        .then(res=> res.json())
+        .then(data => setProducts(data));
+    })
+    let cartHandler = (id)=>{
+        addToDb(id);
+    }
     return (
         <div>
-            <p>{summation}</p>
-            <p>{proMul}</p>
+            {
+                products.map(product => {
+                    return (
+                        <div>
+                            <p>Name: { product.name}</p>
+                            <p key={product.id}></p>
+                            <p>Price: {product.price}</p>
+                            <button onClick={()=>cartHandler(product.id)}>Add to cart</button>
+                        </div>
+                    )
+                })
+            }
         </div>
     );
 };

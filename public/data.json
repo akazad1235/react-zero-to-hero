@@ -1,0 +1,62 @@
+[
+    {
+      "id": "63200e48f7ec7ba90b409e11",
+      "index": 0,
+      "price" : 542,
+      "guid": "a6f1f648-cafa-487b-8ca2-e3c0ffde2fa7",
+      "isActive": true,
+      "balance": "$1,305.18",
+      "picture": "http://placehold.it/32x32",
+      "age": 40,
+      "eyeColor": "brown",
+      "name": "Melva Fry"
+    },
+    {
+      "id": "63200e488fd12a785ad8bf00",
+      "index": 1,
+      "price" : 52,
+      "guid": "70ac9701-f376-4d3a-b02e-430f4268cc3c",
+      "isActive": true,
+      "balance": "$1,179.99",
+      "picture": "http://placehold.it/32x32",
+      "age": 27,
+      "eyeColor": "brown",
+      "name": "Reed Hinton"
+    },
+    {
+      "id": "63200e48149ecf7cd186a11c",
+      "index": 2,
+      "price" : 54,
+      "guid": "dbdeeb8e-8e3d-4347-a0b2-b35527ade6c1",
+      "isActive": false,
+      "balance": "$3,726.61",
+      "picture": "http://placehold.it/32x32",
+      "age": 32,
+      "eyeColor": "brown",
+      "name": "Ericka Dunn"
+    },
+    {
+      "id": "63200e48178fdeabd7d8bc32",
+      "index": 3,
+      "price" : 852,
+      "guid": "bce00a3a-d5a6-487d-9a8a-bb164fe6bd58",
+      "isActive": true,
+      "balance": "$1,317.76",
+      "picture": "http://placehold.it/32x32",
+      "age": 22,
+      "eyeColor": "green",
+      "name": "Penny Johnson"
+    },
+    {
+      "id": "63200e48d728805946cf89ae",
+      "index": 4,
+      "price" : 74,
+      "guid": "d3c16345-2440-4240-ab57-ab19dc358a33",
+      "isActive": false,
+      "balance": "$1,222.05",
+      "picture": "http://placehold.it/32x32",
+      "age": 34,
+      "eyeColor": "blue",
+      "name": "Moss Freeman"
+    }
+  ]
