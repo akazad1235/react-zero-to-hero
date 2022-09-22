@@ -1,0 +1,21 @@
+header{
+    background-color: rgb(48, 42, 42);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+}
+header .logo img{
+    margin-left: 50px;
+}
+header .nav a{
+    margin-right: 50px;
+    color: white;
+    text-decoration: none;
+    
+}
+header .nav a:hover{
+    color: gold;
+}
