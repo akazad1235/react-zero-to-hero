@@ -17,7 +17,7 @@ const Product = (props) => {
                 <p><span>Ratings</span> : {ratings} stars</p>
             </div>
             <button onClick={ () => handleAddToCart(product)} className='btn-cart'>
-                Add to Cart
+                Add to Cart change from master
                 <FontAwesomeIcon icon="fa-solid fa-check-square"/>
             </button>
         </div>
