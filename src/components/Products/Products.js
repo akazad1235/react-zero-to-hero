@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { addToDb } from '../utilities/fakedata';
+import { addToDb } from '../../utilities/fakedb';
+//import { addToDb } from '../utilities/fakedata';
 
 const Products = () => {
     const [products, setProducts] =  useState([]);
@@ -9,8 +10,9 @@ const Products = () => {
         fetch('data.json')
         .then(res=> res.json())
         .then(data => setProducts(data));
-    })
+    }, [])
     let cartHandler = (id)=>{
+        console.log(id);
         addToDb(id);
     }
     return (
@@ -22,7 +24,7 @@ const Products = () => {
                             <p>Name: { product.name}</p>
                             <p key={product.id}></p>
                             <p>Price: {product.price}</p>
-                            <button onClick={()=>cartHandler(product.id)}>Add to cart</button>
+                            <button onClick={ () => cartHandler(product.id)}>Add to cart </button>
                         </div>
                     )
                 })

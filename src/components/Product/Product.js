@@ -1,12 +1,15 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import { addToDb } from '../../utilities/fakedb';
 import './Product.css';
 
 const Product = (props) => {
     const{product, handleAddToCart} = props
-    const {name, img, price,seller, ratings } =product;
+    const {id, name, img, price,seller, ratings } = product;
 
+    let cartHandler = (id, product)=>{
+        addToDb(id);
+        handleAddToCart(product);
+    }
     return (
         <div className='product'>
             <img src={img} alt="" />
@@ -16,10 +19,7 @@ const Product = (props) => {
                 <p><span>Seller</span> : {seller}</p>
                 <p><span>Ratings</span> : {ratings} stars</p>
             </div>
-            <button onClick={ () => handleAddToCart(product)} className='btn-cart'>
-                Add to Cart
-                <FontAwesomeIcon icon="fa-solid fa-check-square"/>
-            </button>
+            <button onClick={ () => cartHandler(id, product)} className='btn-cart'>Add to cart </button>
         </div>
     );
 };

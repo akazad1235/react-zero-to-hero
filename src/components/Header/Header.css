@@ -10,12 +10,12 @@ header{
 header .logo img{
     margin-left: 50px;
 }
-header .nav a{
+header .nav Link{
     margin-right: 50px;
     color: white;
     text-decoration: none;
     
 }
-header .nav a:hover{
+header .nav Link:hover{
     color: gold;
 }
