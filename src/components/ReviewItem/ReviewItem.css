@@ -1,0 +1,33 @@
+.item-product-container{
+    width: 571px;
+    border: 1px solid #dddd;
+    border-radius: 5px;
+    margin:10px;
+    display: flex;
+    align-items: center;
+}
+.item-img img{
+    width: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    height: 100px;
+}
+.item-details-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+}
+.details{
+    text-align: start;
+    line-height: 10px;
+}
+.delete-container button{
+    background-color: rgb(196, 52, 52);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    cursor: pointer;
+}
